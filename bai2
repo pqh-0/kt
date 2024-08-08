@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background: rgb(250, 244, 231);
+        }
+        header {
+            width: 100%;
+        }
+        .Navigation {
+            display:flex;
+            background:  #d2be646f;
+        }
+        .Navigation nav {
+            padding-right: 0;
+            margin-right: 0;
+            margin-left:auto;
+        }
+        .myshop, .navbar{
+            color:black;
+            font-size: large;
+            text-decoration: none;
+            margin: 20px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color:black;
+            padding:10px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .main-image {
+            width: 80%;
+            height: 200px;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .thumbnail-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            width: 80%;
+        }
+        .thumbnail {
+            width: 100%;
+            height: 100px;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1em;
+            color: #333;
+        }
+        .add{
+            border:violet;
+            border-radius: 5px;
+            padding: 2px;
+            background:pink;
+        }
+        .footer {
+            background-color: #d2be646f;
+            padding: 20px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer .left, .footer .middle, .footer .right {
+            align-items: center;
+        }
+        .footer .left {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .footer .middle, .footer .right {
+            font-size: 1em;
+            display:inline-table;
+            margin-right: 30px;
+        } 
+        .footer .middle i, .footer .right i {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 900px) {
+            .container {flex-direction: column;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="Navigation">
+            <a href="#" class="myshop">My Shop</a><br>
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Contact</a>
+                <a href="#">My cart</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-image">IMAGE</div>
+        <div class="thumbnail-grid">
+            <div class="thumbnail">IMAGE 1</div>
+            <div class="thumbnail">IMAGE 2</div>
+            <div class="thumbnail">IMAGE 3</div>
+            <div class="thumbnail">IMAGE 4</div>
+            <div class="thumbnail">IMAGE 5</div>
+            <div class="thumbnail">IMAGE 6</div>
+            <div class="thumbnail">IMAGE 7</div>
+            <div class="thumbnail">IMAGE 8</div>
+        </div>
+        
+        <div class="details">
+            <h1>Lorem ipsum dolor</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="buttons">
+                <h4>Color</h4>
+                <button type="button" class="btn btn-info">Blue</button>
+                <button type="button" class="btn btn-light">Red</button>
+                <button type="button" class="btn btn-light">Green</button>
+            </div>
+        
+            <div class="form-group">
+                <h4>Design</h4>
+                <button type="button" class="btn btn-info">Classic</button>
+                <button type="button" class="btn btn-light">Modern</button>
+            </div>
+
+            <div class="form-group">
+                <h4>Price</h4>
+                <h4>$129.01</h4>
+                </div>
+            <div class="form-group">
+                <label for="discount">Discount 10%</label>
+            </div>
+            <div class="form-group rating">
+                <label>Rating</label>
+            </div>
+            <div class="form-group quantity">
+                <label for="quantity">In Stocks 1004</label>
+            </div>
+            <button class="add">Add to Cart</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="left">My Shop</div>
+        <div class="middle">
+            <i class="fas fa-map-marker-alt"></i> 27 Division St, New York
+        </div>
+        <div class="right">
+            <i class="fas fa-phone-alt"></i> Phone: (123) 456-7890
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
